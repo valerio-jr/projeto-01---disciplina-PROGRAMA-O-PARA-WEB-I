@@ -1,0 +1,118 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F7FA; /* Fundo suave para destacar o canvas */
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container do Projeto (1280x720) */
+.main-container {
+    width: 1280px;
+    height: 720px;
+    background: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Hero Layout */
+.hero-layout {
+    position: absolute;
+    width: 593px;
+    height: 579px;
+    top: -5px;
+    left: 388px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-layout img {
+    width: 348px;
+    height: 223px;
+    object-fit: contain;
+}
+
+/* Header e Texto */
+.header-text {
+    position: absolute;
+    width: 593px;
+    height: 284px;
+    top: 290px;
+    left: 388px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: 700;
+    color: #1A1A1A;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+/* Estilização das palavras coloridas */
+h1 span {
+    color: #2E6BFF;
+}
+
+h1 span.glow {
+    color: #4A86FF;
+    text-shadow: 0px 0px 15px rgba(74, 134, 255, 0.3);
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #7F8C8D;
+}
+
+.description strong {
+    color: #4F565E;
+}
+
+.description a {
+    color: #2E6BFF;
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    width: 592px;
+    height: 36px;
+    top: 651px;
+    left: 340px; /* Ajustado conforme sua especificação */
+    text-align: center;
+}
+
+.divider {
+    width: 100%;
+    border-top: 1px solid #ECEFF2;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #2E6BFF;
+    font-size: 14px;
+    transition: opacity 0.2s;
+}
+
+.footer-links a:hover {
+    opacity: 0.7;
+}
